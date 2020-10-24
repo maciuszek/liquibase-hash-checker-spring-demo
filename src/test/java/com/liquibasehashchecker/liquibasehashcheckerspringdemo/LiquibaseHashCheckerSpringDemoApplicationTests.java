@@ -38,7 +38,7 @@ public class LiquibaseHashCheckerSpringDemoApplicationTests {
 	private SpringLiquibase springLiquibase;
 
 	@Test
-	public void test() throws SQLException, LiquibaseException {
+	public void getHash() throws SQLException, LiquibaseException {
 		final String changelogPath = "config/liquibase/changelog/test.xml";
 
 		// derive the database liquibase from the current configured bean specifically for contextual ChangeLogParameters
